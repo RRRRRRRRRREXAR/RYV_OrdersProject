@@ -16,7 +16,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <Configuration>Debug</Configuration>
-    <DBSyncInBuild>False</DBSyncInBuild>
+    <DBSyncInBuild>True</DBSyncInBuild>
     <GenerateFormAdaptors>False</GenerateFormAdaptors>
     <Company>
     </Company>
@@ -35,10 +35,25 @@
       <Name>RYV_Orders</Name>
       <Link>Forms\RYV_Orders</Link>
     </Content>
+    <Content Include="AxMenuExtension\AccountsReceivable.RYV_Learns">
+      <SubType>Content</SubType>
+      <Name>AccountsReceivable.RYV_Learns</Name>
+      <Link>MenusExtentions\AccountsReceivable.RYV_Learns</Link>
+    </Content>
+    <Content Include="AxMenuExtension\MainMenu.RYV_Learns">
+      <SubType>Content</SubType>
+      <Name>MainMenu.RYV_Learns</Name>
+      <Link>MenusExtentions\MainMenu.RYV_Learns</Link>
+    </Content>
     <Content Include="AxMenuItemDisplay\RYV_Orders">
       <SubType>Content</SubType>
       <Name>RYV_Orders</Name>
       <Link>MenuItem\RYV_Orders</Link>
+    </Content>
+    <Content Include="AxMenu\RYV_Orders">
+      <SubType>Content</SubType>
+      <Name>RYV_Orders</Name>
+      <Link>Menus\RYV_Orders</Link>
     </Content>
     <Content Include="AxTable\RYV_Order">
       <SubType>Content</SubType>
@@ -49,6 +64,8 @@
   <ItemGroup>
     <Folder Include="Forms" />
     <Folder Include="MenuItem" />
+    <Folder Include="Menus" />
+    <Folder Include="MenusExtentions" />
     <Folder Include="Tables" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
